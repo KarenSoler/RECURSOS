@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingHorizontal="40dp"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvAndroidVersionLB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tvVersionAndroidLB" />
+
+        <TextView
+            android:id="@+id/tvAndroidVersion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tvVersionAndroid" />
+
+        <TextView
+            android:id="@+id/tvFlashlight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tvligth" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btLightOff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#3F51B5"
+                android:text="@string/btOff"
+                android:textColorHighlight="#4CAF50"
+                android:textColorLink="#4CAF50" />
+
+            <Button
+                android:id="@+id/btLightOn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#3F51B5"
+                android:text="On" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvBatteryLB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tvLevelBaterry" />
+
+        <TextView
+            android:id="@+id/tvBattery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tvLevelBaterry_2" />
+
+        <ProgressBar
+            android:id="@+id/pbBattery"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tvStorge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tvStorage" />
+
+        <TextView
+            android:id="@+id/etStorage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/etNameFile"
+            android:minHeight="48dp" />
+
+        <ImageButton
+            android:id="@+id/ibStorage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/ibSaveFile"
+            app:srcCompat="@android:drawable/ic_input_add" />
+
+        <TextView
+            android:id="@+id/tvConectionLB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tvState" />
+
+        <TextView
+            android:id="@+id/tvStateConexion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tvStateConexion" />
+
+        <TextView
+            android:id="@+id/tvBT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tvBT" />
+
+        <Button
+            android:id="@+id/btnBT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#CDDC39"
+            android:text="@string/btnBT" />
+
+        <TextView
+            android:id="@+id/tvStateBT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tvStateBT" />
+    </LinearLayout>
+</LinearLayout>
